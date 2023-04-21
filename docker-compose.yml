@@ -34,7 +34,7 @@ services:
     build: ./server/nginx
     restart: always
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - client_volume:/var/www/html
     depends_on:
