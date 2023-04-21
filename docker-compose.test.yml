@@ -1,9 +1,7 @@
 services:
   server:
     container_name: server
-    build: 
-      context: ./server
-      dockerfile: Dockerfile.test
+    build: ./server
     ports: 
       - 5000:5000
     env_file:

@@ -1,6 +1,6 @@
 import supertest from "supertest"
-import app from "../../src/app"
-import { wipeDb } from "../helpers"
+import app from "../src/app"
+import { wipeDb } from "./helpers"
 
 const api = supertest(app)
 
