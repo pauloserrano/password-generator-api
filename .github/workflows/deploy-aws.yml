@@ -26,7 +26,7 @@ jobs:
       - name: Create client .env file
         uses: SpicyPizza/create-envfile@v1.3
         with:
-          envkey_REACT_APP_BACK_END_URL: ${{secrets.VITE_APP_BACKEND_URL}}
+          envkey_VITE_APP_BACKEND_URL: ${{secrets.VITE_APP_BACKEND_URL}}
           directory: client
           file_name: .env
           fail_on_empty: true
