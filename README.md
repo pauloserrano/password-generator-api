@@ -59,8 +59,6 @@ Access the app [here](http://ec2-54-204-253-168.compute-1.amazonaws.com/) or get
 
 ### Prerequisites
 
-- npm
-- node
 - docker
 - docker compose
 
