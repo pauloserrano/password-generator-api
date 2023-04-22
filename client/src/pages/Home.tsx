@@ -5,7 +5,7 @@ import { Card } from "./HomeStyled";
 export function Home() {
   const [password, setPassword] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const API_URL = process.env.VITE_APP_BACKEND_URL;
+  const API_URL = "http://ec2-54-204-253-168.compute-1.amazonaws.com/api";
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
