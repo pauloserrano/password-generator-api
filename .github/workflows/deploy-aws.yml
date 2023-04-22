@@ -35,7 +35,7 @@ jobs:
         run: docker compose down
 
       - name: Delete client_volume if it exists
-        run: if docker volume ls --quiet --filter name=password-generator_client_volume | grep -q .; then docker volume rm password-generator_client_volume; fi
+        run: if docker volume ls --quiet --filter name=password-generator-api_client_volume | grep -q .; then docker volume rm password-generator-api_client_volume; fi
 
       - name: Build new images
         run: docker compose build
